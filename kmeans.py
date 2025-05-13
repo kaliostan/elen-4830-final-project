@@ -13,7 +13,7 @@ from math import sqrt
 
 def compression_KMeans(input_image, output_folder, k):
     image = Image.open(input_image)
-    image.convert('L')    # grayscale
+    image = image.convert('L')    # grayscale
     is_grayscale = image.mode == "L"
 
     if is_grayscale:
